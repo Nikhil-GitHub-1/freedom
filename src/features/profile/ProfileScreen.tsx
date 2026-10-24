@@ -1,8 +1,17 @@
-import { Text, View } from "react-native"
+import { Text, View } from 'react-native';
 
 export const ProfileScreen = () => {
-
-    return <View style={{ flex: 1, backgroundColor: "white" }}>
-        <Text style={{ fontSize: 20, fontWeight: "bold", textAlign: "center", marginTop: 20 }}>Profile Screen</Text>
+  return (
+    <View style={{ flex: 1, backgroundColor: 'white' }}>
+      <Text
+        style={{
+          fontSize: 20,
+          fontWeight: 'bold',
+          textAlign: 'center',
+          marginTop: 20,
+        }}>
+        Profile Screen
+      </Text>
     </View>
-}
+  );
+};

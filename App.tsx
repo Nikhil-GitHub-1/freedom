@@ -62,7 +62,10 @@ function App() {
 
     // Listen for foreground messages
     const unsubscribe = onMessage(messaging, async remoteMessage => {
-      console.log('A new FCM message arrived in foreground', remoteMessage?.notification?.title);
+      console.log(
+        'A new FCM message arrived in foreground',
+        remoteMessage?.notification?.title,
+      );
 
       if (remoteMessage.notification?.title) {
         Alert.alert(
@@ -118,15 +121,13 @@ function AppContent() {
           paddingLeft: safeAreaInsets.left,
           paddingRight: safeAreaInsets.right,
         },
-      ]}
-    >
+      ]}>
       {activeFeature === 'todo' ? (
         <>
           <Pressable
             accessibilityRole="button"
             onPress={() => setActiveFeature(null)}
-            style={styles.backButton}
-          >
+            style={styles.backButton}>
             <Text style={styles.link}>Back to home</Text>
           </Pressable>
           <OfflineFirstTodoEntry />
@@ -134,15 +135,16 @@ function AppContent() {
       ) : (
         <View style={styles.home}>
           <Text style={styles.title}>Home</Text>
-          <Text style={styles.description}>Choose a feature to get started.</Text>
+          <Text style={styles.description}>
+            Choose a feature to get started.
+          </Text>
           <Pressable
             accessibilityRole="button"
             onPress={() => setActiveFeature('todo')}
             style={({ pressed }) => [
               styles.featureCard,
               pressed && styles.featureCardPressed,
-            ]}
-          >
+            ]}>
             <Text style={styles.featureTitle}>Offline-first todo</Text>
             <Text style={styles.link}>Open todo app</Text>
           </Pressable>
