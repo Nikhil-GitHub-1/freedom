@@ -40,6 +40,8 @@ export default [
             'react-native/split-platform-components': 'error',
             'react-native/no-inline-styles': 'warn',
             'react-native/no-color-literals': 'warn',
+            'no-unused-vars': 'off',
+            '@typescript-eslint/no-unused-vars': 'warn',
         },
         settings: {
             react: {
