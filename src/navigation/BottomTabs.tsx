@@ -8,8 +8,9 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { HomeScreen } from '../features/home/HomeScreen';
 import { ProfileScreen } from '../features/profile/ProfileScreen';
 import { SettingsScreen } from '../features/settings/SettingsScreen';
+import type { BottomTabParamList } from './types';
 
-const Tab = createBottomTabNavigator();
+const Tab = createBottomTabNavigator<BottomTabParamList>();
 const ACCENT = '#6D5AE6';
 const MUTED = '#858A9B';
 

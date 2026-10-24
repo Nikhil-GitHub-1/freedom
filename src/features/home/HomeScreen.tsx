@@ -1,6 +1,18 @@
 import { Button, Text, View } from 'react-native';
+import type { CompositeScreenProps } from '@react-navigation/native';
+import type { BottomTabScreenProps } from '@react-navigation/bottom-tabs';
+import type { NativeStackScreenProps } from '@react-navigation/native-stack';
+import type {
+  BottomTabParamList,
+  RootStackParamList,
+} from '../../navigation/types';
 
-export const HomeScreen = ({ navigation }: { navigation: any }) => {
+type HomeScreenProps = CompositeScreenProps<
+  BottomTabScreenProps<BottomTabParamList, 'Home'>,
+  NativeStackScreenProps<RootStackParamList, 'Main'>
+>;
+
+export const HomeScreen = ({ navigation }: HomeScreenProps) => {
   return (
     <View style={{ flex: 1, backgroundColor: 'white' }}>
       <Text

@@ -1,8 +1,9 @@
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { OfflineFirstTodoEntry } from '../features/offline-first-todo-app';
 import { BottomTabs } from './BottomTabs';
+import type { RootStackParamList } from './types';
 
-const Stack = createNativeStackNavigator();
+const Stack = createNativeStackNavigator<RootStackParamList>();
 
 function AppNavigator() {
   return (

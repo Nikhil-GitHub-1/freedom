@@ -42,6 +42,7 @@ export default [
             'react-native/no-color-literals': 'warn',
             'no-unused-vars': 'off',
             '@typescript-eslint/no-unused-vars': 'warn',
+            '@typescript-eslint/no-require-imports': 'off',
         },
         settings: {
             react: {
