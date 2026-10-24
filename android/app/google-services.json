@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "783186679951",
+    "project_id": "freedom-ef657",
+    "storage_bucket": "freedom-ef657.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:783186679951:android:fe80ddfa8386a22185f8fa",
+        "android_client_info": {
+          "package_name": "com.freedom"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCwk3a5Wczltuz4sCpAY9nTrGtGuqUagG0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
